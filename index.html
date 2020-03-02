@@ -2,36 +2,31 @@
 <html>
     <head>
         <title>Alex's quote game</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet"> 
     </head>
     <body>
-        <div id="header">
-            <h1>Who's Quote is it?</h1>
-            <p>See if you can tell if a quote is Donald Trump's or Kanye West's</p>
-        </div>
-        <div id="page">
-            <p class="imputPrompt">How many quotes would you like to try?</p>
-            <select id="numQuotes">
-                <option value=1>1</option>
-                <option value=2>2</option>
-                <option value=3>3</option>
-                <option value=4>4</option>
-                <option value=5>5</option>
-            </select>
-            <button id="startGame">Start Game</button>
-
-            <!--  This section will replace the above once the game starts
-            <p id="quote"></p>
-            <div class="answerButtons">
-                <button id="donaldButton">Donald Trump</button>
-                <button id="kanyeButton">Kanye West</button>
+        <div id="page-wrapper">
+            <div id="header">
+                <h1>Who's Quote is it?</h1>
+                <p>See if you can tell if a quote is Donald Trump's or Kanye West's</p>
             </div>
-            <p id=score>0 / 0</p>
-            -->
-
-            <!-- Victory Screen after all quotes have been used-->
+            <div id="page">
+                <p class="inputPrompt">How many quotes would you like to try?</p>
+                <select id="numQuotes">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select>
+                <button id="startGame">Start Game</button>
+            </div>
         </div>
+        
         <div id="footer">
-
+            <a href="https://github.com/ChosenGible/quotes">---My github---</a> 
         </div>
         <script text="type/javascript" src="quotes.js">
         </script>

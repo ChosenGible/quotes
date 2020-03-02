@@ -2,16 +2,150 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
 }
 
-@media only screen and (max-width: 600px){
-    
+#header {
+    background-color: #BF3B91;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 960px){
+body {
+    background-color: #F2C9E0;
+}
+
+#page {
+    background-color: #F2F2F2;
+}
+
+#footer {
+    background-color: #BF3B91;
+}
+
+@media only screen and (max-width: 800px){
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 3vw;
+        text-align: center;
+    }
+
+    #header > p {
+        padding: 1vh 0vw;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #page-wrapper{
+        height: 95vh;
+    }
+
+    #page {
+        display: flex;
+        flex-direction: column;
+        margin: 3vw 5vw;
+        padding: 2vw 2vw;
+        text-align: center;
+    }
+
+    #page > p {
+        padding-bottom: 3vh;
+    }
+
+    #page > h2 {
+        padding-bottom: 3vh;
+    }
+
+    #donaldButton {
+        padding: 4px 2vw;
+    }
+
+    #kanyeButton {
+        padding: 4px 2vw;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1080px){
 
 }
 
-@media only screen and (min-width: 961px){
-    
+@media only screen and (min-width: 1081px){
+    #page-wrapper {
+        height: 97vh;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 8vh 14vw;
+        padding: 2vh 4vw;
+        padding-bottom: 3vh;
+    }
+
+    #page > p {
+        font-size: x-large;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    #page > h2 {
+        font-size: xx-large;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    #numQuotes {
+        width: 30vw;
+    }
+
+    #startGame {
+        width: 30vw;
+    }
+
+    #playAgain {
+        width: 30vw;
+    }
+
+    #donaldButton {
+        padding: 7px 2vw;
+        font-size: large;
+    }
+
+    #kanyeButton {
+        padding: 7px 2vw;
+        font-size: large;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        height: 3vh;
+    }
 }
